@@ -28,6 +28,14 @@
                 background: none;
             }
 
+            .container2 {
+                height: 10em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: none;
+            }
+
             .container2 a {
                 margin: 20px;
                 color: rgb(255, 255, 255);
@@ -35,20 +43,34 @@
                 width: 480px;
             }
 
+            .container2 a:hover {
+                background-color: #004b8d;
+                border-color: #004b8d;
+                color: #f68b1f;
+            }
 
             @media (max-width: 1280px) {
                 * {
-                    font-size: xx-large;
-                }
+                    font-size: larger;
+                } 
+                .container2 {
+                    display: grid;
+                }  
             }
         </style>
     </head>
     <body>
         <div class="container1">
-            <p>Exemplo de Portfólio Pessoal</p>
+            <p>Exemplo de Portfólio Pessoal / Profissional</p>
         </div>
+
+        <div class="container2">
+            <a href="#" type="button" class="btn btn-outline-primary btn-lg">Info 1</a>
+            <a href="#" type="button" class="btn btn-outline-primary btn-lg">Info 2</a>
+        </div>
+
         <div class="container1">
-            <p id="data">Sala 03 - Unidade Centro</p>
+            <p id="data">Técnico em Informática</p>
         </div>
 
         <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
@@ -59,7 +81,7 @@
                 loop: true,
             }).go();
             new TypeIt("#data", {
-                strings: "Senac Unidade Lafaiete",
+                strings: "Senac - CEP Lafaiete",
                 speed: 100,
                 loop: true,
             }).go();
